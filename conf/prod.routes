@@ -1,0 +1,10 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+POST      /registerEmployee                   controllers.EmployeeController.registerEmployee
+
+GET       /presentCard/:card                  controllers.EmployeeController.presentCard(card:Card)
+
+POST      /addBalance/:card/:amountToAdd      controllers.EmployeeController.addFunds(card: Card, amountToAdd: Int)
